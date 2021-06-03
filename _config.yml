@@ -2,9 +2,12 @@
 #  Your basic info
 # ---------------------------------------------------------------------------------------
 base_info:
+
   title: Less Is More
   author: 洪笳淏
   url: https://JiahaoHong1997.github.io
+   # Logo image (You can use local image, image external link or don’t fill)
+  logo_img: /images/avatar.svg
 
 font:
   enable: true
@@ -275,4 +278,4 @@ footer:
 # ---------------------------------------------------------------------------------------
 # Keep version (Please don't modify)
 # ---------------------------------------------------------------------------------------
-version: 3.4.2
+version: 3.4.3
