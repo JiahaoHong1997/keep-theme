@@ -2,17 +2,48 @@
 #  Your basic info
 # ---------------------------------------------------------------------------------------
 base_info:
-  title: Keep Theme
-  author: Keep Team
-  url: https://keep.xpoet.cn/
+  title: Less Is More
+  author: 洪笳淏
+  url: https://JiahaoHong1997.github.io
 
+font:
+  enable: true
 
+  # 外链字体库地址，例如 //fonts.googleapis.com (默认值)
+  host: https://fonts.google.com/
+
+  # 全局字体，应用在 body 元素上
+  global:
+    external: true
+    family: Alex Brush
+
+  # 标题字体 (h1, h2, h3, h4, h5, h6)
+  headings:
+    external: true
+    family: Lobster
+
+  # 文章字体
+  posts:
+    external: true
+    family: Noto Serif SC
+
+  # Logo 字体
+  logo:
+    external: true
+    family: Alex Brush
+
+  # 代码字体，应用于 code 以及代码块
+  codes:
+    external: true
+    family: Source Code Pro
+
+    
 # ---------------------------------------------------------------------------------------
 # Theme style settings
 # ---------------------------------------------------------------------------------------
 style:
   # Theme primary color
-  primary_color: '#0066CC'
+  primary_color: '#CC9999'
 
   # Avatar (You can use local image or image external link)
   avatar: /images/avatar.svg
@@ -36,32 +67,33 @@ style:
 
   # First screen
   first_screen:
-    enable: false
-    background_img: /images/bg.svg   # You can use local image or image external link
-    description: Keep writing and Keep loving.
+    enable: true
+    background_img: /images/ay9bh-ow8ve.svg   # You can use local image or image external link
+    description: Talk is cheap. Show me the code.
 
   # Scroll style settings
   scroll:
     progress_bar:
-      enable: false
+      enable: true
     percent:
-      enable: false
+      enable: true
 
 
 # ---------------------------------------------------------------------------------------
 # Social contact link
 # ---------------------------------------------------------------------------------------
 social_contact:
-  enable: false
+  enable: true
   links:
-    github:          # your GitHub URL
+    zhihu: https://www.zhihu.com/people/hao-hao-hao-78-20-16          # your ZhiHu URL
+    github: https://github.com/JiahaoHong1997         # your GitHub URL
     weixin:          # your WeChat QR-Code URL
     qq:              # your QQ QR-Code URL
     weibo:           # your WeiBo URL
-    zhihu:           # your ZhiHu URL
+  
     twitter:         # your twitter URL
     facebook:        # your facebook URL
-    email:           # your email
+    email: hongjiahao1997@gmail.com          # your email
 
 
 # ---------------------------------------------------------------------------------------
@@ -70,10 +102,10 @@ social_contact:
 menu:
   Home: /
   Archives: /archives
-  # Categories: /categories
-  # Tags: /tags
-  # Links: /links
-  # About: /about
+  Categories: /categories
+  Tags: /tags
+  Links: /links
+  About: /about
   # Changelog: /changelog
   # ......
 
@@ -83,10 +115,10 @@ menu:
 # ---------------------------------------------------------------------------------------
 home_article:
   category:
-    enable: false     # show category in home page article block
+    enable: true     # show category in home page article block
     limit: 3          # max number of categories shown in home page article block
   tag:
-    enable: false     # show tags in home page article block
+    enable: true     # show tags in home page article block
     limit: 5          # max number of tags shown in home page article block
 
 
@@ -98,23 +130,23 @@ post:
   # Dependencies: hexo-wordcount (npm install hexo-wordcount)
   # See: https://github.com/willin/hexo-wordcount
   word_count:
-    enable: false
-    wordcount: false  # word count, one article
-    min2read: false   # time to read, one article
+    enable: true
+    wordcount: true  # word count, one article
+    min2read: true   # time to read, one article
 
   # Author label
   author_label:
     enable: true
     auto: true  # if true, show Lv1, Lv2, Lv3... , If false, show custom label
     # label array item can be one or more
-    custom_label_list: [ "Trainee", "Engineer", "Architect", "CTO", "BOSS" ]
+    custom_label_list: [ "默默无闻", "初入江湖", "一鸣惊人", "声名鹊起", "威震一方", "天下无敌"]
 
 
 # ---------------------------------------------------------------------------------------
 # Code copy
 # ---------------------------------------------------------------------------------------
 code_copy:
-  enable: false
+  enable: true
   style: default        # values: default | mac
 
 
@@ -122,23 +154,23 @@ code_copy:
 # Table of Contents in the Sidebar
 # ---------------------------------------------------------------------------------------
 toc:
-  enable: false
+  enable: true
 
   # Automatically add list number to toc.
-  number: false
+  number: true
 
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
-  expand_all: false
+  expand_all: true
 
   # If true, open TOC every time when you enter the article page
-  init_open: false
+  init_open: true
 
 
 # ---------------------------------------------------------------------------------------
 # Post copyright info
 # ---------------------------------------------------------------------------------------
 copyright_info:
-  enable: false
+  enable: true
 
 
 # ---------------------------------------------------------------------------------------
@@ -148,10 +180,10 @@ website_count:
   # busuanzi
   # See: http://ibruce.info/2015/04/04/busuanzi/
   busuanzi_count:
-    enable: false
-    site_uv: false
-    site_pv: false
-    page_pv: false
+    enable: true
+    site_uv: true
+    site_pv: true
+    page_pv: true
 
 
 # ---------------------------------------------------------------------------------------
@@ -160,16 +192,25 @@ website_count:
 # See: https://github.com/theme-next/hexo-generator-searchdb
 # ---------------------------------------------------------------------------------------
 local_search:
-  enable: false
-  preload: false     # Preload the search data when the page loads
+  enable: true
+  preload: true     # Preload the search data when the page loads
+
+
+# Search
+## See: https://github.com/theme-next/hexo-generator-searchdb
+search:
+  path: search.json
+  field: post
+  content: true
+  format: striptags
 
 
 # ---------------------------------------------------------------------------------------
 # Comment plugin
 # ---------------------------------------------------------------------------------------
 comment:
-  enable: false
-  use: valine  # values: valine | gitalk | twikoo
+  enable: true
+  use: gitalk  # values: valine | gitalk | twikoo
 
   # Valine
   # See: https://github.com/xCss/Valine
@@ -181,10 +222,10 @@ comment:
   # Gitalk
   # See: https://github.com/gitalk/gitalk
   gitalk:
-    github_id:             # GitHub repo owner
-    repository:            # Repository name to store issues
-    client_id:             # GitHub Application Client ID
-    client_secret:         # GitHub Application Client Secret
+    github_id: JiahaoHong1997  # GitHub repo owner
+    repository: comment           # Repository name to store issues
+    client_id: 9f01169dad8b4c5b8cf4    # GitHub Application Client ID
+    client_secret: fed95d2960e49d8d37cdf0f41fcc912044c5132d  # GitHub Application Client Secret
 
   # Twikoo
   # See: https://github.com/imaegoo/twikoo
@@ -206,28 +247,28 @@ rss:
 # Lazyload image
 # ---------------------------------------------------------------------------------------
 lazyload:
-  enable: false
+  enable: true
 
 
 # ---------------------------------------------------------------------------------------
 # CDN
 # ---------------------------------------------------------------------------------------
 cdn:
-  enable: false
+  enable: true
 
 
 # ---------------------------------------------------------------------------------------
 # PJAX
 # ---------------------------------------------------------------------------------------
 pjax:
-  enable: false
+  enable: true
 
 
 # ---------------------------------------------------------------------------------------
 # Footer settings
 # ---------------------------------------------------------------------------------------
 footer:
-  since: 2020      # the starting year of your website, Can be null
+  since: 2021      # the starting year of your website, Can be null
   icp:             # ICP record number of your website, Can be null
 
 
